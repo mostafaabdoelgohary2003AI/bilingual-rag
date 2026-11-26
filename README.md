@@ -116,3 +116,6 @@ sample_docs/       # demo corpus (English + Arabic)
 - Developed with AI pair-programming assistance; architecture, evaluation
   design and testing decisions are my own.
 - License: MIT.
+
+## Real LLM run (Gemini API free tier)
+Run with `LLM_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai LLM_MODEL=gemini-3.1-flash-lite LLM_API_KEY=... python demo.py --llm`. Measured Nov 26, 2026 on the three demo questions (English and Arabic): all three answers were grounded in the retrieved sample documents and carried citations; retrieval on the 4 labelled questions was hit-rate@3 1.0 and MRR@3 1.0 (a tiny set, not a benchmark). The client retries transient 429/503 responses with backoff.
