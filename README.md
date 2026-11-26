@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.png" width="128" alt="bilingual-rag logo"></p>
+
 # bilingual-rag
 
 Retrieval-augmented generation over Arabic and English documents, with
